@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&family=Ubuntu:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #cae4ff !important;
+}
+
+/* ------------------------------------navbar------------------------------------ */
+.nav {
+  padding-top: 30px !important;
+  color: #ffc107;
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.iconImg {
+  height: 3rem;
+  width: 3rem;
+}
+.iconT {
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 3px #0d7ded;
+  font-family: "Irish Grover", cursive;
+}
+/* Heading Section */
+.mainContainer {
+  font-family: "Ubuntu", sans-serif;
+  height: 470px;
+  padding: 10px 15rem;
+  text-align: center;
+}
+.mainHeading {
+  color: #0d7ded;
+  font-weight: bold !important;
+  padding-top: 70px;
+  font-size: 4rem;
+}
+.mainButtonsContainer {
+  margin-top: 100px;
+}
+.mainButtons {
+  background-color: #f8c83a !important;
+  color: #0d7ded;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #034f9b;
+  padding: 1px 5px 5px 3px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border-color: #033669;
+  margin: 0 10px;
+}
+/* footer */
+.footer {
+  font-size: 1.5rem;
+  color: #033669;
+  text-align: center;
+}
+/*------------------------------------ Repeater Section ----------------------------*/
+
+.R_Container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 85px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+}
+.ioContainer {
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 5px 0.5px #033669;
+  height: 400px;
+  width: 65%;
+  margin: 40px 3%;
+  text-align: center;
+}
+.btnR {
+  font-size: 1.3rem;
+  border-radius: 5px;
+  color: white;
+  background-color: #033669 !important;
+  padding: 0px 5px;
+}
+.iotext {
+  width: 80%;
+  margin: 40px 0;
+  font-size: 1.5rem;
+  border: 0;
+  border-bottom: 3px solid #034f9b;
+  outline: none;
+}
+
+/* Input */
+.inputContainer {
+  justify-self: right;
+}
+
+.checkboxContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.checkSpan {
+  margin: 10px;
+}
+.checkbox {
+  height: 15px;
+  width: 15px;
+}
+.checkLabel {
+  font-size: 1.2rem;
+  color: #034f9b;
+}
+
+/* Output */
+.outputContainer {
+  justify-self: left;
+}
+.output {
+  text-align: left;
+  margin: 20px 15px;
+  font-size: 1.5rem;
+  color: #033669;
+}
+.textarea {
+  height: 200px !important;
+  border: 3px solid #033669;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.backBtnContainer {
+  display: block;
+  clear: left;
+}
+#backBtn {
+  margin-left: 5%;
+}
+/*--------------------------------- Reverse-Related------------------------------------ */
+#revInputCo {
+  justify-self: right;
+}
+#revBackBtn{
+    margin-left: 5%;
+}
+/* ------------------------------------Media Querry------------------------------------ */
+@media (max-width: 500px) {
+  /*>>>>>>>>>> Navbar*/
+  .nav {
+    padding-top: 30px !important; 
+    padding: 10px 0px;
+   
+  }
+  .iconImg {
+    height: 2rem;
+    width: 2rem;
+  }
+  .iconT {
+    font-size: 1.7rem;   
+  }
+  .mainContainer {
+    height: 500px;
+    width: 100%;
+    padding: 10px 0;
+  
+  }
+ /*>>>>>>>>>> Heading section */
+  .mainHeading {
+    padding-top: 0px;
+    padding:90px 40px 40px 40px;
+    font-size: 3rem;
+  }
+  .mainButtonsContainer {
+    margin-top: 0;
+  }
+  .mainButtons {  
+    padding: 1px 5px 3px 5px;
+    font-size: 1rem;  
+    margin: 0 10px;
+  }
+  /* footer */
+  .footer {
+    font-size: 1.2rem;
+    margin-top: 30px;
+   
+  }
+  /*/*>>>>>>>>>> Repeat Section */
+  .R_Container {
+    width: 100%;
+    height: 150%;
+   
+    position: absolute;
+    top: 85px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+  }
+  .ioContainer {
+   
+    height: 400px;
+    width: 80%;
+    margin: 40px 3%;
+   
+  }
+  .btnR {
+    font-size: 1.3rem;
+    border-radius: 8px;
+   
+    padding: 0px 5px ;
+  }
+  .iotext {
+  
+    margin: 40px 0;
+    font-size: 1.3rem;
+  
+   
+  }
+  /* Input */
+.inputContainer {
+    justify-self: center;
+  }
+  
+  .checkboxContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+ /* Output */
+.outputContainer {
+    justify-self: center;
+  }
+ 
+  .textarea {
+    height: 180px !important;    
+  
+  }
+  /*/*>>>>>>>>>> Reverse Section */
+  #revInputCo {
+    justify-self: center;
+  }
+  #revOutputCo{
+    justify-self: center;
+  }
+}
