@@ -154,9 +154,11 @@ $("#selectOutputBtn").click(function(){
 });
 //>>>>>>>>>>>>>click Listner on copy Button
 $("#copyBtn").click(function(){
-  let output =document.querySelector("#outputTextBox");
-  navigator.clipboard.writeText(output.value);
-  alert("Text Copied !");
+  let output =document.getElementById("outputTextBox");
+  output.select();
+  document.execCommand('copy');  
+  alert("Text Copied !"); 
+  
 });
 
 
@@ -176,9 +178,10 @@ $("#revBtn").click(function () {
 });
 //>>>>>>>>>>>>>Click Listner on revCopy btn
 $("#revCopyBtn").click(function(){
-  let output =document.querySelector("#revOutputBox");
-  navigator.clipboard.writeText(output.value);
-  alert("Text Copied !");
+  let output =document.getElementById("revOutputBox");
+  output.select();
+  document.execCommand('copy');  
+  alert("Text Copied !"); 
 });
 //>>>>>>>>>>>>>Click listner  on Clear Btn
 $("#revClearBtn").click(function () {

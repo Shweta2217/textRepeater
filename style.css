@@ -22,7 +22,7 @@
 .iconT {
   font-size: 2rem;
   font-weight: bold;
-  text-shadow: 1px 3px #0d7ded;
+  text-shadow: 1px 3px #033669;
   font-family: "Irish Grover", cursive;
 }
 /* Heading Section */
@@ -45,7 +45,7 @@
   background-color: #f8c83a !important;
   color: #0d7ded;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #034f9b;
+  text-shadow: 1px 1px 1px #033669;
   padding: 1px 5px 5px 3px;
   font-size: 1.5rem;
   border-radius: 10px;
@@ -80,8 +80,10 @@
   text-align: center;
 }
 .btnR {
+  outline: none;
   font-size: 1.3rem;
-  border-radius: 5px;
+  border-color: white;
+  border-radius: 10px;
   color: white;
   background-color: #033669 !important;
   padding: 0px 5px;
@@ -130,7 +132,7 @@
 .textarea {
   height: 200px !important;
   border: 3px solid #033669;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-top: 10px;
 }
 
@@ -145,106 +147,96 @@
 #revInputCo {
   justify-self: right;
 }
-#revBackBtn{
-    margin-left: 5%;
+#revBackBtn {
+  margin-left: 5%;
 }
 /* ------------------------------------Media Querry------------------------------------ */
 @media (max-width: 500px) {
   /*>>>>>>>>>> Navbar*/
   .nav {
-    padding-top: 30px !important; 
+    padding-top: 30px !important;
     padding: 10px 0px;
-   
   }
   .iconImg {
     height: 2rem;
     width: 2rem;
   }
   .iconT {
-    font-size: 1.7rem;   
+    font-size: 1.7rem;
   }
   .mainContainer {
     height: 500px;
     width: 100%;
     padding: 10px 0;
-  
   }
- /*>>>>>>>>>> Heading section */
+  /*>>>>>>>>>> Heading section */
   .mainHeading {
     padding-top: 0px;
-    padding:90px 40px 40px 40px;
+    padding: 90px 40px 40px 40px;
     font-size: 3rem;
   }
   .mainButtonsContainer {
     margin-top: 0;
   }
-  .mainButtons {  
+  .mainButtons {
     padding: 1px 5px 3px 5px;
-    font-size: 1rem;  
+    font-size: 1rem;
     margin: 0 10px;
   }
   /* footer */
   .footer {
     font-size: 1.2rem;
     margin-top: 30px;
-   
   }
   /*/*>>>>>>>>>> Repeat Section */
   .R_Container {
     width: 100%;
     height: 150%;
-   
+
     position: absolute;
     top: 85px;
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    
   }
   .ioContainer {
-   
     height: 400px;
     width: 80%;
     margin: 40px 3%;
-   
   }
   .btnR {
     font-size: 1.3rem;
     border-radius: 8px;
-   
-    padding: 0px 5px ;
+
+    padding: 0px 5px;
   }
   .iotext {
-  
     margin: 40px 0;
     font-size: 1.3rem;
-  
-   
   }
   /* Input */
-.inputContainer {
+  .inputContainer {
     justify-self: center;
   }
-  
+
   .checkboxContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
- /* Output */
-.outputContainer {
+  /* Output */
+  .outputContainer {
     justify-self: center;
   }
- 
+
   .textarea {
-    height: 180px !important;    
-  
+    height: 180px !important;
   }
   /*/*>>>>>>>>>> Reverse Section */
   #revInputCo {
     justify-self: center;
   }
-  #revOutputCo{
+  #revOutputCo {
     justify-self: center;
   }
 }
